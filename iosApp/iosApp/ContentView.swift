@@ -1,16 +1,21 @@
+// В iOS приложении (iosApp/iosApp/ContentView.swift)
 import SwiftUI
-import shared
 
 struct ContentView: View {
-	let greet = Greeting().greet()
-
-	var body: some View {
-		Text(greet)
-	}
+    var body: some View {
+        VStack {
+            Button(action: {
+                let viewController = HealthViewController()
+                viewController.sendDataButtonPressed(UIButton())
+            }) {
+                Text("Send Health Data")
+            }
+        }
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
-	static var previews: some View {
-		ContentView()
-	}
+    static var previews: some View {
+        ContentView()
+    }
 }
