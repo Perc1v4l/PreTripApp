@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlinAndroid).apply(false)
     alias(libs.plugins.kotlinMultiplatform).apply(false)
     alias(libs.plugins.kotlinCocoapods).apply(false)
+    kotlin("plugin.serialization") version "1.9.20" // Добавьте версию здесь
 }
 
 buildscript {
